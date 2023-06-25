@@ -25,7 +25,7 @@ describe('multiply', function(){
     })
 
     it("test 5", function () {
-        assert.equal(multiply(5,5), 25)
+        assert.equal(multiply(23, 45),23 * 45)
     })
 
 })
