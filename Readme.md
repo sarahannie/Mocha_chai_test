@@ -1,8 +1,8 @@
 ## Node Package Using Eslint with Airbnb- config
 
-✅ npm init -y
-✅ npm install -D eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-node eslint-config-node
-✅ npx install-peer-deeps --dev eslint-config-airbnb
+✅ npm init -y <br>
+✅ npm install -D eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-node eslint-config-node<br>
+✅ npx install-peer-deeps --dev eslint-config-airbnb<br>
 ✅ eslint --init
 
 ## to renew(after cloning)
