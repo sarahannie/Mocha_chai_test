@@ -1,0 +1,19 @@
+{
+    
+    "extends": ["airbnb", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier":"off",
+        "no-unused-vars":"warn",
+        "no-console":"off",
+        "func-names":"off",
+        "no-process-exit":"off",
+        "object-shorthand":"off",
+        "class-methods-use-this":"off",
+        "prefer-destructuring":"off",
+        "import/no-extraneous-dependencies": ["off", {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}],
+        "prefer-arrow-callback":"off",
+        "no-undef": "off"
+        
+    }
+}
