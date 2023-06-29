@@ -1,7 +1,8 @@
 const assert = require("chai").assert;
-const factorial = require("../src/factorial")
-const multiply = require("../src/multiply")
-const fibonacci = require("../src/fibonacci")
+const factorial = require("../src/factorial");
+const multiply = require("../src/multiply");
+const fibonacci = require("../src/fibonacci");
+const tax = require("../src/tax")
 
 describe('multiply', function(){
 
@@ -34,6 +35,7 @@ describe(" Factorial() ", function () {
         assert.equal(factorial(6),720)
     })
 })
+
 describe(" fibonacci() ", function () {
 
     it (" 1 = 1 ", function () {
@@ -55,4 +57,40 @@ describe(" fibonacci() ", function () {
         assert.equal(fibonacci(6),8)
     });
 })
+
+describe(" tax() ", function () {
+
+     //    0% tax from earning above  12000  in a year
+    it (" Earning < 12000 = 0", function () {
+        assert.equal(tax(10000),0)
+    })
+
+    it(" Earning == 12000 = 0", function() {
+        assert.equal(tax(12000), 0);
+      });
+
+      //    20% tax from earning above  12000  and below 36000 in a year
+
+    it(" Earning > 12000 = 2600 ", function() {
+        assert.equal(tax(13000), 2600);
+      });
+
+    it(" Earning == 20000 = 4000", function() {
+        assert.equal(tax(20000), 4000);
+      });
+
+    it(" Earning == 36000 = 7200", function() {
+        assert.equal(tax(36000), 7200);
+      });
+
+    //    40% tax from earning above  360000 in a year
+
+    it(" Earning > 36000 = 7200", function() {
+        assert.equal(tax(40000), 16000);
+      });
+
+
+})
+
+
 
